@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script>
+    function myFunction() {
+  v=document.getElementById("number").value
+  
+   while(v.length >1){
+        c=v.charAt(0)  
+        v=v.substring(1)
+        v=parseInt(v)+parseInt(c)
+        v=v.toString()
+    }
+  console.log(v)
+ document.getElementById("answer").innerHTML = ["0","3","6","9"].includes(v,0);
+}
+</script>
+<head>
+
+</head>
+<body>
+
+   number <input type="text" id=number>
+   <button onclick="myFunction()">verify</button>
+   <p id="answer"></p>
+
+</body>
